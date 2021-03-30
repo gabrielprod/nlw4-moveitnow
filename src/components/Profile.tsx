@@ -1,3 +1,16 @@
+import styles from '../styles/components/Profile.module.css'
+
 export function Profile(){
-    
+    return(
+        <div className={styles.profileContainer}>
+            <img src="https://github.com/gabrielprod.png" alt="Gabriel R"/>
+            <div>
+                <strong>Gabriel Rodrigues</strong>
+                <p>
+                    <img src="icons/level.svg" alt="level"/>
+                    Level 1
+                </p>
+            </div>
+        </div>
+    )
 }
