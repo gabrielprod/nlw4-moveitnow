@@ -1,10 +1,12 @@
+<<<<<<< HEAD
 import { useState, useEffect, useContext } from 'react'
 import { ChallengesContext } from '../contexts/ChallengesContext'
+=======
+>>>>>>> parent of 8d6dff3 (feat: adding the challengeBox component)
 import styles from '../styles/components/CountDown.module.css'
 
-let countDownTimeOut: NodeJS.Timeout
-
 export function CountDown(){
+<<<<<<< HEAD
 
     const { startNewChallenge } = useContext(ChallengesContext)
 
@@ -40,19 +42,20 @@ export function CountDown(){
         }
     },[isActive, time])
 
+=======
+>>>>>>> parent of 8d6dff3 (feat: adding the challengeBox component)
     return(
-        <div>
-            <div className={styles.countDownContainer}>
-                <div>
-                    <span>{minuteLeft}</span>
-                    <span>{minuteRight}</span>
-                </div>
-                <span>:</span>
-                <div>
-                    <span>{secondLeft}</span>
-                    <span>{secondRight}</span>
-                </div>
+        <div className={styles.countDownContainer}>
+            <div>
+                <span>2</span>
+                <span>5</span>
             </div>
+            <span>:</span>
+            <div>
+                <span>0</span>
+                <span>0</span>
+            </div>
+<<<<<<< HEAD
 
             {hasFinished ? (
                 <button 
@@ -84,6 +87,8 @@ export function CountDown(){
 
                 </>
             )}
+=======
+>>>>>>> parent of 8d6dff3 (feat: adding the challengeBox component)
         </div>
     )
 }
